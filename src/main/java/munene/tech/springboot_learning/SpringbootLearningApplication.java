@@ -11,8 +11,8 @@ public class SpringbootLearningApplication {
 
 		var ctx = SpringApplication.run(SpringbootLearningApplication.class, args);
 
-		MyFirstClass myFirstClass = ctx.getBean("myFirstBean", MyFirstClass.class);
-		System.out.println(myFirstClass.sayHello());
+		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
+		System.out.println(myFirstService.tellAStory());
 	}
 
 }
